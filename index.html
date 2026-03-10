@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Comidinhas Para Meu Bebê 🍐 - Receitas Saudáveis para Bebês</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pink: #E91E8C;
+      --pink-light: #FCE4F3;
+      --green: #22C55E;
+      --green-dark: #16A34A;
+      --green-light: #DCFCE7;
+      --yellow: #FEF9C3;
+      --yellow-dark: #EAB308;
+      --yellow-medium: #FEF08A;
+      --cream: #FFFDE7;
+      --red-dashed: #EF4444;
+      --text-dark: #1F2937;
+      --text-gray: #6B7280;
+      --white: #FFFFFF;
+      --blue-light: #DBEAFE;
+      --mint-light: #D1FAE5;
+      --rose-light: #FCE7F3;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ===== PAGE WRAPPER ===== */
+    .page-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px 16px;
+      border: 3px dashed var(--red-dashed);
+      border-radius: 12px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      text-align: center;
+      padding: 32px 16px 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 900;
+      color: var(--pink);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      color: var(--text-gray);
+      max-width: 560px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 0 auto;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ===== SECTION TITLES ===== */
+    .section-title {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: var(--pink);
+      text-align: center;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-gray);
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    /* ===== PAIN SECTION ===== */
+    .pain-section {
+      padding: 40px 16px;
+    }
+
+    .pain-inner {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .pain-image {
+      flex: 1;
+      min-width: 260px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .pain-image img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .pain-content {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .pain-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .pain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    .pain-item:last-child { margin-bottom: 0; }
+
+    .pain-item .icon { font-size: 1.4rem; flex-shrink: 0; }
+
+    .pain-not-alone {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--pink);
+      margin-top: 20px;
+    }
+
+    /* ===== SOLUTION SECTION ===== */
+    .solution-section {
+      padding: 40px 16px;
+    }
+
+    .solution-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      margin-bottom: 24px;
+    }
+
+    .solution-card p {
+      text-align: center;
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .check-list {
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+    }
+
+    .check-list li .check-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--green);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+
+    .highlight-box {
+      background: var(--yellow);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .highlight-box .icon { font-size: 1.4rem; flex-shrink: 0; }
+
+    /* Feature cards */
+    .feature-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .feature-cards { grid-template-columns: 1fr; }
+    }
+
+    .feature-card {
+      border-radius: 16px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    .feature-card.blue { background: var(--blue-light); }
+    .feature-card.mint { background: var(--mint-light); }
+    .feature-card.rose { background: var(--rose-light); }
+
+    .feature-card .emoji { font-size: 2rem; margin-bottom: 10px; }
+
+    .feature-card h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .feature-card.blue h3 { color: #1D4ED8; }
+    .feature-card.mint h3 { color: #065F46; }
+    .feature-card.rose h3 { color: #9D174D; }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      line-height: 1.5;
+    }
+
+    /* ===== PREVIEW SECTION ===== */
+    .preview-section {
+      padding: 40px 16px;
+    }
+
+    .recipe-carousel {
+      border: 2px dashed var(--red-dashed);
+      border-radius: 16px;
+      padding: 16px;
+      overflow: hidden;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .recipe-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .recipe-item {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .recipe-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .recipe-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.92);
+      padding: 8px 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-align: center;
+    }
+
+    /* ===== BONUS SECTION ===== */
+    .bonus-section {
+      padding: 40px 16px;
+    }
+
+    .bonus-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bonus-list li {
+      background: var(--yellow-medium);
+      border-radius: 10px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .bonus-list li .check-circle {
+      width: 26px;
+      height: 26px;
+      background: var(--yellow-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    /* ===== GIFTS SECTION ===== */
+    .gifts-section {
+      padding: 40px 16px;
+    }
+
+    .gifts-section .section-subtitle {
+      margin-bottom: 20px;
+    }
+
+    .gifts-carousel {
+      border: 2px dashed var(--red-dashed);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .gifts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .gifts-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .gift-item {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .gift-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gift-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.92);
+      padding: 8px 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-align: center;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section {
+      padding: 40px 16px;
+      background: var(--pink-light);
+      border-radius: 20px;
+      margin: 20px 0;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 700px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--pink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .testimonial-name {
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+    }
+
+    .testimonial-time {
+      font-size: 0.78rem;
+      color: var(--text-gray);
+    }
+
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .stars {
+      color: #FBBF24;
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+
+    /* ===== FOR WHO ===== */
+    .for-who-section {
+      padding: 40px 16px;
+    }
+
+    .for-who-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 500px) {
+      .for-who-grid { grid-template-columns: 1fr; }
+    }
+
+    .for-who-item {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .for-who-item .check { color: var(--green); font-size: 1.2rem; }
+
+    /* ===== PRICE SECTION ===== */
+    .price-section {
+      padding: 40px 16px;
+    }
+
+    .price-card {
+      background: linear-gradient(135deg, #FEF9C3, #FEF08A);
+      border-radius: 20px;
+      padding: 36px 24px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(234, 179, 8, 0.3);
+    }
+
+    .price-label {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #92400E;
+      margin-bottom: 8px;
+    }
+
+    .price-value {
+      font-size: clamp(3.5rem, 10vw, 5rem);
+      font-weight: 900;
+      color: var(--green-dark);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .price-original {
+      font-size: 1.1rem;
+      color: var(--text-gray);
+      text-decoration: line-through;
+      margin-bottom: 8px;
+    }
+
+    .price-warning {
+      background: #FEE2E2;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #DC2626;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .price-benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .price-benefit {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .price-benefit span { font-weight: 800; color: var(--green-dark); }
+
+    /* ===== CTA BUTTON ===== */
+    .cta-btn {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 20px 32px;
+      background: linear-gradient(135deg, #22C55E, #16A34A);
+      color: white;
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      font-weight: 900;
+      text-align: center;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(34, 197, 94, 0.6);
+    }
+
+    .cta-btn.yellow-cta {
+      background: linear-gradient(135deg, #EAB308, #CA8A04);
+      box-shadow: 0 6px 20px rgba(234, 179, 8, 0.5);
+    }
+
+    .cta-btn.yellow-cta:hover {
+      box-shadow: 0 10px 28px rgba(234, 179, 8, 0.6);
+    }
+
+    /* ===== GUARANTEE ===== */
+    .guarantee-section {
+      padding: 40px 16px;
+    }
+
+    .guarantee-card {
+      border: 2px solid var(--green);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      background: var(--white);
+    }
+
+    .guarantee-icon {
+      width: 72px;
+      height: 72px;
+      background: var(--green-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 2rem;
+    }
+
+    .guarantee-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--pink);
+      margin-bottom: 8px;
+    }
+
+    .guarantee-card p {
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .guarantee-highlight {
+      background: var(--green-light);
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--green-dark);
+    }
+
+    /* ===== FAQ ===== */
+    .faq-section {
+      padding: 40px 16px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .faq-item h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      font-size: 0.95rem;
+      color: var(--text-gray);
+      line-height: 1.6;
+    }
+
+    /* ===== FINAL CTA ===== */
+    .final-cta {
+      padding: 40px 16px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 900;
+      color: var(--pink);
+      margin-bottom: 28px;
+      line-height: 1.3;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      padding: 20px 16px;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      font-weight: 600;
+    }
+
+    /* ===== DIVIDER ===== */
+    .divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--pink), transparent);
+      margin: 8px 0;
+      opacity: 0.3;
+    }
+
+    /* ===== SOCIAL PROOF BADGE ===== */
+    .social-proof {
+      text-align: center;
+      padding: 16px;
+    }
+
+    .social-proof-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      border-radius: 50px;
+      padding: 12px 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    .social-proof-badge .emoji { font-size: 1.4rem; }
+
+    /* ===== PULSE ANIMATION ===== */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+
+    /* ===== COUNTDOWN ===== */
+    .countdown-bar {
+      background: #DC2626;
+      color: white;
+      text-align: center;
+      padding: 12px 16px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    #countdown {
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1>Comidinhas Para Meu Bebê 🍎</h1>
+    <p>Descubra como milhares de mamães fizeram seus bebês comerem de forma saudável e sem estresse!</p>
+    <div class="hero-image">
+      <img src="assets/images/baby-eating.jpg" alt="Bebê feliz comendo com colher" />
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== DOR ===== -->
+  <section class="pain-section">
+    <h2 class="section-title">Você já passou por isso? 👇</h2>
+
+    <div class="pain-inner">
+      <div class="pain-image">
+        <img src="assets/images/baby-spoon.jpg" alt="Bebê recusando comida" />
+      </div>
+      <div class="pain-content">
+        <div class="pain-card">
+          <div class="pain-item">
+            <span class="icon">💔</span>
+            <span>Seu bebê recusa tudo que você oferece.</span>
+          </div>
+          <div class="pain-item">
+            <span class="icon">💔</span>
+            <span>A hora da refeição virou um momento de choro e desespero.</span>
+          </div>
+          <div class="pain-item">
+            <span class="icon">💔</span>
+            <span>Você se sente culpada por não conseguir fazer ele comer direito.</span>
+          </div>
+          <div class="pain-item">
+            <span class="icon">💔</span>
+            <span>Não sabe quais alimentos oferecer em cada fase do desenvolvimento.</span>
+          </div>
+          <div class="pain-item">
+            <span class="icon">💔</span>
+            <span>Fica preocupada se seu bebê está se alimentando de forma nutritiva.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="pain-not-alone">Você NÃO está sozinha, mamãe! 💕</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== SOLUÇÃO ===== -->
+  <section class="solution-section">
+    <h2 class="section-title">💡 A solução que vai transformar<br/>a alimentação do seu bebê!</h2>
+
+    <div class="solution-card">
+      <p>Mais de <strong>100 receitas fáceis, nutritivas e aprovadas por mamães reais</strong> que vão acabar com o estresse na hora da refeição e fazer seu bebê pedir mais! 🍼</p>
+      <ul class="check-list">
+        <li><span class="check-icon">✓</span> Receitas pensadas para cada idade do bebê</li>
+        <li><span class="check-icon">✓</span> Cardápios por textura, do lisinho ao mais consistente</li>
+        <li><span class="check-icon">✓</span> Sugestões completas para cada refeição do dia: café da manhã, almoço, lanche e jantar</li>
+        <li><span class="check-icon">✓</span> Ingredientes simples que você já tem em casa</li>
+        <li><span class="check-icon">✓</span> Preparo rápido para o dia a dia corrido de mãe</li>
+      </ul>
+      <div class="highlight-box">
+        <span class="icon">🍽️</span>
+        <span>Tudo organizado de forma simples para você não ter dúvidas sobre o que oferecer em cada fase.</span>
+      </div>
+    </div>
+
+    <div class="feature-cards">
+      <div class="feature-card blue">
+        <div class="emoji">👶</div>
+        <h3>Por Idade</h3>
+        <p>Receitas adaptadas para cada fase do desenvolvimento do bebê</p>
+      </div>
+      <div class="feature-card mint">
+        <div class="emoji">🥄</div>
+        <h3>Por Textura</h3>
+        <p>Do mais lisinho ao mais texturizado, respeitando o desenvolvimento</p>
+      </div>
+      <div class="feature-card rose">
+        <div class="emoji">🍲</div>
+        <h3>Por Refeição</h3>
+        <p>Café da manhã, almoço, lanche e jantar completos</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== PREVIEW ===== -->
+  <section class="preview-section">
+    <h2 class="section-title">👁️ Veja por dentro do Guia!</h2>
+    <p class="section-subtitle">Algumas das receitas que você vai encontrar</p>
+
+    <div class="recipe-carousel">
+      <div class="recipe-grid">
+        <div class="recipe-item">
+          <img src="assets/images/baby-food-bowls.jpg" alt="Receitas variadas" />
+          <div class="recipe-label">Purê de Abóbora com Frango</div>
+        </div>
+        <div class="recipe-item">
+          <img src="assets/images/baby-food-variety.jpg" alt="Variedade de papinhas" />
+          <div class="recipe-label">Papinhas Coloridas</div>
+        </div>
+        <div class="recipe-item">
+          <img src="assets/images/baby-bowl.jpg" alt="Bebê com tigela" />
+          <div class="recipe-label">Mingau Nutritivo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== BÔNUS ===== -->
+  <section class="bonus-section">
+    <h2 class="section-title">🎁 Bônus que você recebe junto:</h2>
+
+    <ul class="bonus-list">
+      <li>
+        <span class="check-circle">✓</span>
+        Cardápios prontos por idade
+      </li>
+      <li>
+        <span class="check-circle">✓</span>
+        Checklist da introdução alimentar
+      </li>
+      <li>
+        <span class="check-circle">✓</span>
+        Guia de texturas por fase
+      </li>
+      <li>
+        <span class="check-circle">✓</span>
+        Sugestões para bebês seletivos
+      </li>
+      <li>
+        <span class="check-circle">✓</span>
+        Calendário mensal de planejamento
+      </li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== PRESENTINHOS ===== -->
+  <section class="gifts-section">
+    <h2 class="section-title">🎁 Presentinhos que você leva junto:</h2>
+    <p class="section-subtitle">Além do guia completo com mais de 100 receitinhas, você recebe esses bônus incríveis para facilitar ainda mais a sua rotina:</p>
+
+    <div class="gifts-carousel">
+      <div class="gifts-grid">
+        <div class="gift-item">
+          <img src="assets/images/mother-baby.jpg" alt="Plano alimentar" />
+          <div class="gift-label">Plano alimentar para bebês de 6 a 12 meses</div>
+        </div>
+        <div class="gift-item">
+          <img src="assets/images/baby-eating.jpg" alt="Lista de substituições" />
+          <div class="gift-label">Lista de substituições saudáveis para bebês</div>
+        </div>
+        <div class="gift-item">
+          <img src="assets/images/baby-spoon.jpg" alt="Dicas de armazenamento" />
+          <div class="gift-label">Dicas de armazenamento de comida para bebês</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="testimonials-section">
+    <div class="social-proof">
+      <div class="social-proof-badge">
+        <span class="emoji">👩‍👩‍👧</span>
+        <span>Mais de 10.000 Mamães já transformaram a alimentação dos seus bebês!</span>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Ana Paula</div>
+            <div class="testimonial-time">Ontem, 11:15</div>
+          </div>
+        </div>
+        <p class="testimonial-text">Obrigada, vai me ajudar muito nessa fase da IA do meu pequeno! Amei cada receitinha e ainda tem a parte que explica e ajuda muito! 🙏</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="background:#E91E8C;">M</div>
+          <div>
+            <div class="testimonial-name">Mariana Costa</div>
+            <div class="testimonial-time">Hoje, 09:30</div>
+          </div>
+        </div>
+        <p class="testimonial-text">Muito obrigado, eu amei as receitinhas mal posso esperar pra começar a fazer 😍😍😍🙏 Parabéns pelo conteúdo!</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="background:#8B5CF6;">J</div>
+          <div>
+            <div class="testimonial-name">Juliana Ferreira</div>
+            <div class="testimonial-time">Ontem, 23:31</div>
+          </div>
+        </div>
+        <p class="testimonial-text">Oi comprei teu e-book adorei as receitas obgda! Havia comprado outro e-book mais caro e totalmente sem conteúdo para a IA 😊</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="background:#F59E0B;">C</div>
+          <div>
+            <div class="testimonial-name">Camila Rodrigues</div>
+            <div class="testimonial-time">Hoje, 14:22</div>
+          </div>
+        </div>
+        <p class="testimonial-text">Olha que maravilha a gente fica muito feliz com um feedback desse 💗 Meu bebê está adorando tudo que tenho feito!</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="background:#10B981;">F</div>
+          <div>
+            <div class="testimonial-name">Fernanda Lima</div>
+            <div class="testimonial-time">2 dias atrás</div>
+          </div>
+        </div>
+        <p class="testimonial-text">É por esses feedbacks que a gente vê que vale a pena todo nosso trabalho aqui! Meu filho agora come de tudo sem reclamar 🥰</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="background:#EF4444;">R</div>
+          <div>
+            <div class="testimonial-name">Renata Souza</div>
+            <div class="testimonial-time">3 dias atrás</div>
+          </div>
+        </div>
+        <p class="testimonial-text">Olha está adorando tudo, tenho feito várias coisas até agente tem comidokkkobrigda por ajudar! Que delícia fico muito honrada 💕</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== PARA QUEM É ===== -->
+  <section class="for-who-section">
+    <h2 class="section-title">🎯 Este Guia é perfeito para você que:</h2>
+
+    <div class="for-who-grid">
+      <div class="for-who-item">
+        <span class="check">✅</span>
+        Tem bebê entre 6 e 12 meses começando a introdução alimentar
+      </div>
+      <div class="for-who-item">
+        <span class="check">✅</span>
+        Sente dificuldade em organizar refeições
+      </div>
+      <div class="for-who-item">
+        <span class="check">✅</span>
+        Seu bebê recusa novos alimentos
+      </div>
+      <div class="for-who-item">
+        <span class="check">✅</span>
+        Precisa de praticidade no dia a dia corrido de mãe
+      </div>
+      <div class="for-who-item">
+        <span class="check">✅</span>
+        Busca refeições rápidas e saudáveis
+      </div>
+      <div class="for-who-item">
+        <span class="check">✅</span>
+        Quer ver seu bebê feliz e nutrido
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== PREÇO ===== -->
+  <section class="price-section">
+    <div class="price-card">
+      <div class="countdown-bar">
+        ⏰ OFERTA ESPECIAL EXPIRA EM: <span id="countdown">14:59</span>
+      </div>
+
+      <div class="price-label">HOJE por apenas</div>
+      <div class="price-value pulse">R$15</div>
+      <div class="price-original">De R$97,00</div>
+      <div class="price-warning">⚠️ ATENÇÃO: Após o prazo volta para R$97,00!</div>
+
+      <div class="price-benefits">
+        <div class="price-benefit">💰 Você economiza <span>R$ 82</span> e garante acesso imediato!</div>
+        <div class="price-benefit">📱 Recebe tudo por email em até <span>5 minutos!</span></div>
+        <div class="price-benefit">♾️ Acesso <span>VITALÍCIO</span> ao conteúdo!</div>
+      </div>
+
+      <a href="#" class="cta-btn">
+        🚀 SIM! QUERO TRANSFORMAR A ALIMENTAÇÃO DO MEU BEBÊ AGORA! 💚
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== GARANTIA ===== -->
+  <section class="guarantee-section">
+    <h2 class="section-title">💛 Garantia Mamãe tranquila - 7 dias</h2>
+
+    <div class="guarantee-card">
+      <div class="guarantee-icon">🛡️</div>
+      <h3>🤗 Eu entendo sua preocupação, mamãe...</h3>
+      <p>Por isso, você tem <strong>7 dias completos</strong> para testar todas as receitas com seu bebê.</p>
+      <p>Se por qualquer motivo você não ficar <strong>100% satisfeita</strong>, basta me enviar um email e eu devolvo cada centavo do seu investimento.</p>
+      <div class="guarantee-highlight">
+        💚 ZERO risco para você. TODO o resultado para seu bebê!
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section">
+    <h2 class="section-title">🤔 Perguntas que você ainda pode ter:</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>✅ Como vou receber o Guia?</h3>
+        <p>📧 O Guia será enviado automaticamente para seu e-mail logo após a aprovação do pagamento.</p>
+      </div>
+      <div class="faq-item">
+        <h3>✅ Quanto tempo tenho acesso?</h3>
+        <p>♾️ O acesso é VITALÍCIO! Você terá acesso para sempre ao conteúdo.</p>
+      </div>
+      <div class="faq-item">
+        <h3>✅ Funciona para bebês de que idade?</h3>
+        <p>👶 As receitas são adequadas para bebês de 6 meses até 2 anos de idade.</p>
+      </div>
+      <div class="faq-item">
+        <h3>✅ E se eu não gostar?</h3>
+        <p>🛡️ Garantia de 7 dias! Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas!</p>
+      </div>
+      <div class="faq-item">
+        <h3>✅ Preciso de algum aplicativo para acessar?</h3>
+        <p>📱 Não! O guia é enviado em formato PDF, acessível em qualquer celular, tablet ou computador.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <h2>🌟 Sua jornada de transformação começa AGORA!</h2>
+    <a href="#" class="cta-btn yellow-cta">
+      💛 QUERO GARANTIR MINHA TRANQUILIDADE AGORA! 🥑
+    </a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    💗 Feito com amor para mamães e bebês
+  </footer>
+
+</div>
+
+<script>
+  // Countdown Timer
+  function startCountdown(duration) {
+    let timer = duration;
+    const display = document.getElementById('countdown');
+    const interval = setInterval(() => {
+      const minutes = Math.floor(timer / 60);
+      const seconds = timer % 60;
+      display.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      if (--timer < 0) {
+        clearInterval(interval);
+        display.textContent = '00:00';
+      }
+    }, 1000);
+  }
+
+  startCountdown(14 * 60 + 59);
+
+  // Smooth scroll for CTA buttons
+  document.querySelectorAll('.cta-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('.price-section').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
